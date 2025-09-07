@@ -102,6 +102,13 @@ function App() {
     setSelectedCertificate(null);
   };
 
+const downloadCV = () => {
+  const link = document.createElement('a');
+  link.href = '/File/Mochammad Fajar Maulana_CV_ATS.pdf';
+  link.download = 'Mochammad Fajar Maulana_CV_ATS.pdf';
+  link.click();
+};
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
       {/* Header Navigation */}
@@ -200,7 +207,7 @@ function App() {
               </div>
 
               {/* Download CV Button */}
-              <button className="mr-5 inline-flex items-center space-x-2 bg-cyan-400 text-slate-900 px-6 py-3 rounded-lg font-semibold hover:bg-cyan-300 transition-colors duration-300 transform hover:scale-105">
+              <button onClick={downloadCV} className="mr-5 inline-flex items-center space-x-2 bg-cyan-400 text-slate-900 px-6 py-3 rounded-lg font-semibold hover:bg-cyan-300 transition-colors duration-300 transform hover:scale-105">
                 <Download size={25} />
                 <span>Download CV</span>
               </button>
@@ -247,14 +254,15 @@ function App() {
                 <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
                   {[
                     { name: 'Python', color: 'from-blue-700 to-blue-800', iconPath: '/Icons/python.png' },
+                    { name: 'Java', color: 'from-blue-700 to-teal-800', iconPath: '/Icons/java.png' },
                     { name: 'JavaScript', color: 'from-amber-600 to-red-700', iconPath: '/Icons/java-script.png' },
                     { name: 'C++', color: 'from-blue-700 to-blue-800', iconPath: '/Icons/c-.png' },
                     { name: 'React', color: 'from-cyan-800 to-teal-900', iconPath: '/Icons/sciene.png' },
+                    { name: 'SQL', color: 'from-amber-700 to-blue-800', iconPath: '/Icons/sql-server.png' },
                     { name: 'HTML5', color: 'from-orange-600 to-red-700', iconPath: '/Icons/html5.png' },
                     { name: 'CSS3', color: 'from-blue-700 to-blue-800', iconPath: '/Icons/css3.png' },
                     { name: 'PHP', color: 'from-black-400 to-blue-500', iconPath: '/Icons/php.png' },
-                    { name: 'CodeIgniter4', color: 'from-orange-700 to-red-800', iconPath: '/Icons/CI4.png' },
-                    { name: 'MySQL', color: 'from-cyan-500 to-cyan-500', iconPath: '/Icons/mysql.png' }
+                    { name: 'CodeIgniter4', color: 'from-orange-700 to-red-800', iconPath: '/Icons/CI4.png' }
                   ].map((skill, index) => (
                     <div key={index} className="group">
                       <div className="bg-slate-700/50 rounded-lg p-6 text-center hover:bg-slate-600/50 transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
@@ -306,10 +314,12 @@ function App() {
                   {[
                     { name: 'Git', color: 'from-orange-800 to-orange-900', iconPath: '/Icons/git.png' },
                     { name: 'VS Code', color: 'from-purple-800 to-blue-900', iconPath: '/Icons/vscode.png' },
-                    { name: 'Figma', color: 'from-purple-800 to-purple-800', iconPath: '/Icons/figma.png' },
+                    { name: 'NetBeans', color: 'from-blue-700 to-purple-900', iconPath: '/Icons/NetBeans.png' },
                     { name: 'Jupyter Notebook', color: 'from-orange-800 to-orange-800', iconPath: '/Icons/jupyter.png' },
+                    { name: 'MySQL', color: 'from-cyan-500 to-cyan-500', iconPath: '/Icons/mysql.png' },
+                    { name: 'Firebase', color: 'from-yellow-500 to-red-600', iconPath: '/Icons/firebase.png' },
                     { name: 'XAMPP', color: 'from-orange-600 to-orange-700', iconPath: '/Icons/xampp.png' },
-                    { name: 'Firebase', color: 'from-yellow-500 to-red-600', iconPath: '/Icons/firebase.png' }
+                    { name: 'Figma', color: 'from-purple-800 to-purple-800', iconPath: '/Icons/figma.png' },
                   ].map((skill, index) => (
                     <div key={index} className="group">
                       <div className="bg-slate-700/50 rounded-lg p-6 text-center hover:bg-slate-600/50 transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
@@ -603,8 +613,8 @@ function App() {
                   title: "Belajar Dasar Manajemen Proyek"
                 },
                 {
-                  image: '/Image/Sertifikat/soon.PNG',
-                  title: "Soon"
+                  image: '/Image/Sertifikat/Memulai Pemrograman dengan Java.PNG',
+                  title: "Memulai Pemrograman Dengan Java"
                 },
                 {
                   image: '/Image/Sertifikat/soon.PNG',
