@@ -36,6 +36,28 @@ export default function Projects() {
         setCurrentImageIndex(index);
     };
 
+    const DSLink = ({ datasetLink }: { datasetLink: string }) => {
+        if(datasetLink != "#") {
+            return (
+                <div>
+                        <div className="space-y-3">
+                        <a
+                            href={selectedProject.datasetLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center space-x-3 bg-cyan-400 text-slate-900 px-4 py-2 rounded-lg font-semibold hover:bg-cyan-300 transition-colors duration-300 w-full justify-center"
+                        >
+                            <Github size={20} />
+                            <span>View Dataset</span>
+                        </a>
+                        </div>
+                    </div>  
+            );
+        } else {
+            return null;
+        }
+    };
+
     // Content
     return(
         <section id="projects" className="min-h-screen flex items-center">
@@ -69,7 +91,8 @@ export default function Projects() {
                     technologies: ["CodeIgniter 4", "HTML", "JavaScript", "Boostrap 5", "PHP", "MySQL"],
                     category: "Full Stack",
                     features: ["User Authentication (login)", "Shopping Cart", "Payment Order",  "Management Data Product", "Management Data Order", "Management Data User", "Management Data Payment", "Data Dashboard (Chart)", "Export Report Data (Excel Format)"],
-                    gitLink: "https://github.com/mitharu25/ECommerce-Cake.git"
+                    gitLink: "https://github.com/mitharu25/ECommerce-Cake.git",
+                    datasetLink: "#",
                     },
                     {
                     title: "E-commerce Car",
@@ -88,7 +111,8 @@ export default function Projects() {
                     technologies: ["CodeIgniter 3", "HTML", "JavaScript", "Boostrap 5", "PHP", "MySQL"],
                     category: "Full Stack",
                     features: ["User Authentication (login)", "Purchase", "Payment", "Management Data Product", "Management Data Purchasing", "Management Data User"],
-                    gitLink: "https://github.com/mitharu25/ECommerce-Car.git"
+                    gitLink: "https://github.com/mitharu25/ECommerce-Car.git",
+                    datasetLink: "#",
                     },
                     {
                     title: "Flood Tracker",
@@ -106,7 +130,8 @@ export default function Projects() {
                     technologies: ["Native", "Leaflet", "HTML", "JavaScript", "Boostrap 5", "PHP", "MySQL"],
                     category: "Full Stack",
                     features: ["User Authentication (login)", "Automatic Polygon Colour Area", "Maker Location", "Management Data Report Flood", "Management Data User", "Data Dashboard (Chart)", "Export Report Data (Excel Format)"],
-                    gitLink: "https://github.com/mitharu25/Flood-Tracker.git"
+                    gitLink: "https://github.com/mitharu25/Flood-Tracker.git",
+                    datasetLink: "#",
                     },
                     {
                     title: "Recommendation College Major",
@@ -121,11 +146,13 @@ export default function Projects() {
                         "/Image/RekomendasiJurusan/Capture3,5.PNG",
                         "/Image/RekomendasiJurusan/Capture4.PNG",
                         "/Image/RekomendasiJurusan/Capture5.PNG",
+                        "/Image/RekomendasiJurusan/Capture6.PNG",
                     ],
                     technologies: ["Python", "Pandas", "NumPy", "Scikit-Learn", "Matplotlib", "Flask", "HTML", "Boostrap 5"],
                     category: "Machine Learning",
                     features: ["Input Subject Grades", "Test RIASEC", "Recommendation College Major", "Result Chart"],
-                    gitLink: "https://github.com/mitharu25/Recommendation-Collage-Major.git"
+                    gitLink: "https://github.com/mitharu25/Recommendation-Collage-Major.git",
+                    datasetLink: "https://github.com/mitharu25/Dataset_Skripsi.git",
                     }
                 ].map((project, index) => (
                     <div key={index} className="group">
@@ -303,6 +330,7 @@ export default function Projects() {
                         </a>
                         </div>
                     </div>
+                    <DSLink datasetLink={selectedProject.datasetLink} />
                     </div>
                     </div>
                 </div>
