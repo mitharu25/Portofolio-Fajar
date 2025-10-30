@@ -233,7 +233,7 @@ export default function Projects() {
                     <img
                         src={selectedProject.images[currentImageIndex]}
                         alt={`${selectedProject.title} - Image ${currentImageIndex + 1}`}
-                        className="w-full h-auto object-contain"
+                        className="w-full h-auto object-cover"
                         loading="lazy"
                     />
                     </div>
