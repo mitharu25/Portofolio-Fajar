@@ -229,7 +229,7 @@ export default function Projects() {
                 <div className="p-6 space-y-6">
                 {/* Image Carousel */}
                 <div className="relative">
-                    <div className="aspect-video rounded-lg overflow-hidden bg-slate-700">
+                    <div className="aspect-video min-h-[200px] rounded-lg overflow-hidden bg-slate-700">
                     <img
                         src={selectedProject.images[currentImageIndex]}
                         alt={`${selectedProject.title} - Image ${currentImageIndex + 1}`}
