@@ -24,7 +24,7 @@ function App() {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <div className="text-white text-xl font-bold">
-              MyPortofolio.
+              Fajar-Portofolio.
             </div>
 
             {/* Desktop Navigation */}

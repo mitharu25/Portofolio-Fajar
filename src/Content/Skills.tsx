@@ -56,7 +56,6 @@ export default function Skills() {
                     { name: 'NumPy', color: 'from-blue-800 to-indigo-900', iconPath: '/Icons/numpy.png' },
                     { name: 'Scikit-Learn', color: 'from-blue-600 to-blue-700', iconPath: '/Icons/scikit-learn.png' },
                     { name: 'TensorFlow', color: 'from-orange-600 to-orange-700', iconPath: '/Icons/tensorflow.png' },
-                    { name: 'Matplotlib', color: 'from-blue-600 to-blue-700', iconPath: '/Icons/math.png' }
                   ].map((skill, index) => (
                     <div key={index} className="group">
                       <div className="bg-slate-700/50 rounded-lg p-6 text-center hover:bg-slate-600/50 transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
@@ -81,10 +80,9 @@ export default function Skills() {
                   {[
                     { name: 'Git', color: 'from-orange-800 to-orange-900', iconPath: '/Icons/git.png' },
                     { name: 'VS Code', color: 'from-purple-800 to-blue-900', iconPath: '/Icons/vscode.png' },
-                    { name: 'NetBeans', color: 'from-blue-700 to-purple-900', iconPath: '/Icons/NetBeans.png' },
                     { name: 'Jupyter Notebook', color: 'from-orange-800 to-orange-800', iconPath: '/Icons/jupyter.png' },
                     { name: 'MySQL', color: 'from-cyan-500 to-cyan-500', iconPath: '/Icons/mysql.png' },
-                    { name: 'PostgreSQL', color: 'from-blue-500 to-cyan-600', iconPath: '/Icons/postgre.png' },
+                    { name: 'MongoDB', color: 'from-green-500 to-green-700', iconPath: '/Icons/mongoDB.png' },
                     { name: 'Firebase', color: 'from-yellow-500 to-red-600', iconPath: '/Icons/firebase.png' },
                     { name: 'XAMPP', color: 'from-orange-600 to-orange-700', iconPath: '/Icons/xampp.png' },
                     { name: 'Figma', color: 'from-purple-800 to-purple-800', iconPath: '/Icons/figma.png' },
