@@ -10,12 +10,9 @@ export default function Home() {
   const [charIndex, setCharIndex] = React.useState(0);
   
   const professions = [
-    "Software Engineer ⚙️",
-    "Data Scientist 📊",
-    "Data Analyst 📈",
-    "Data Management 🗃️",
-    "Web Developer 💻",
-    "UI/UX Designer 🎨",
+    "Software Engineering 🧩",
+    "AI Engineering 🤖",
+    "Full-Stack Developer 💻",
   ];
 
   React.useEffect(() => {
@@ -74,11 +71,14 @@ export default function Home() {
                   Mochammad Fajar Maulana
                 </h2>
                 <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight">
-                  And I'm a <span className="text-cyan-400 inline-block min-w-[280px]">
-                    {displayText}
-                    <span className="animate-pulse">|</span>
-                  </span>
+                  And I'm a 
                 </h3>
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight">
+                  <span className="text-cyan-400 inline-block min-w-[280px]">
+                    {displayText}
+                  <span className="animate-pulse">|</span>
+                  </span>
+                </h2>
               </div>
 
               <p className="text-gray-300 text-lg leading-relaxed max-w-xl">

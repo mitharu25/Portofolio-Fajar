@@ -23,7 +23,7 @@ export default function Skills() {
                     { name: 'JavaScript', color: 'from-amber-600 to-red-700', iconPath: '/Icons/java-script.png' },
                     { name: 'C & C++', color: 'from-blue-700 to-blue-800', iconPath: '/Icons/c-.png' },
                     { name: 'NodeJS', color: 'from-green-500 to-green-600', iconPath: '/Icons/nodejs.png' },
-                    { name: 'Haskell', color: 'from-indigo-400 to-fuchsia-500', iconPath: '/Icons/haskell.png' },
+                    { name: 'ExpressJS', color: 'from-gray-200 to-gray-400', iconPath: '/Icons/Express.png' },
                     { name: 'SQL', color: 'from-amber-700 to-blue-800', iconPath: '/Icons/sql-server.png' },
                     { name: 'HTML5', color: 'from-orange-600 to-red-700', iconPath: '/Icons/html5.png' },
                     { name: 'CSS3', color: 'from-blue-700 to-blue-800', iconPath: '/Icons/css3.png' },
