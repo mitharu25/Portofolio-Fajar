@@ -129,10 +129,10 @@ const ContactCharacter: React.FC = () => {
         {/* Floating Hearts Animation */}
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-8 right-4 text-red-400 animate-bounce" style={{ animationDelay: '0s' }}>
-            💙
+            ⭐
           </div>
           <div className="absolute top-12 left-4 text-pink-400 animate-bounce" style={{ animationDelay: '1s' }}>
-            💜
+            ⭐
           </div>
           <div className="absolute bottom-20 right-8 text-yellow-400 animate-bounce" style={{ animationDelay: '2s' }}>
             ⭐

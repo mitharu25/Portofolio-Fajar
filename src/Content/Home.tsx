@@ -84,7 +84,7 @@ export default function Home() {
               <p className="text-gray-300 text-lg leading-relaxed max-w-xl">
                 I am a graduate with a Bachelor degree in Computer Science, focusing on the development and innovation of 
                 digital technologies, including artificial intelligence. I continuously enhance my knowledge and skills in the latest 
-                technological advancements to contribute significantly to technological progress in the era of Industry 4.0 and beyond.
+                technological advancements to contribute significantly to technological progress in the era of Industry 4.0 and the future.
               </p>
 
               {/* Social Media Icons */}

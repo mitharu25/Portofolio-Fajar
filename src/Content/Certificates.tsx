@@ -27,6 +27,14 @@ export default function Certificates() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {[
                 {
+                  image: '/Image/Sertifikat/Membangun Aplikasi Gen AI dengan Microsoft Azure.PNG',
+                  title: "Membangun Aplikasi Gen AI dengan Microsoft Azure"
+                },
+                {
+                  image: '/Image/Sertifikat/Belajar Penerapan Data Science dengan Microsoft Fabric.PNG',
+                  title: "Belajar Penerapan Data Science dengan Microsoft Fabric"
+                },
+                {
                   image: '/Image/Sertifikat/Belajar_Dasar_ManPro.PNG',
                   title: "Belajar Dasar Manajemen Proyek"
                 },
