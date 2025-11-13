@@ -11,8 +11,8 @@ export default function Home() {
   
   const professions = [
     "Software Engineering 🧩",
-    "Full-Stack Developer 💻",
     "AI Engineering 🤖",
+    "Full-Stack Developer 💻",
     "Data Scientist 📊",
   ];
 
