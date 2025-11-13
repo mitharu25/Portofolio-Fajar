@@ -11,8 +11,9 @@ export default function Home() {
   
   const professions = [
     "Software Engineering 🧩",
-    "AI Engineering 🤖",
     "Full-Stack Developer 💻",
+    "AI Engineering 🤖",
+    "Data Scientist 📊",
   ];
 
   React.useEffect(() => {
